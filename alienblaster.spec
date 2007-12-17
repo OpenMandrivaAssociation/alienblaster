@@ -15,7 +15,6 @@ Source12:	%{name}-32x32.png
 Source13:	%{name}-48x48.png
 URL:		http://www.schwardtnet.de/alienblaster/
 BuildRequires:	SDL_mixer-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Alien Blaster is an action-loaded 2D arcade shooter game. Your mission in the 
