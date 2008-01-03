@@ -40,18 +40,6 @@ cd %{_gamesdatadir}/%{name}
 EOF
 chmod 755 $RPM_BUILD_ROOT%{_gamesbindir}/alienBlaster
 
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat > $RPM_BUILD_ROOT%{_menudir}/%{name} <<EOF
-?package(%{name}):\
-command="%{_gamesbindir}/alienBlaster"\
-title="Alien Blaster"\
-longtitle="%{Summary}"\
-needs="x11"\
-icon="arcade_section.png"\
-section="More Applications/Games/Arcade" \
-xdg="true"
-EOF
-
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
@@ -86,7 +74,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc README CHANGELOG AUTHORS VERSION
 %attr(0755,root,games) %{_gamesbindir}/*
 %{_gamesdatadir}/%{name}
-%{_menudir}/%{name}
 %{_datadir}/applications/mandriva-%{name}.desktop
 %{_miconsdir}/%{name}.png
 %{_iconsdir}/%{name}.png
