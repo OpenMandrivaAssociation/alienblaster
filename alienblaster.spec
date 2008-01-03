@@ -1,6 +1,6 @@
 %define	name	alienblaster
 %define	version 1.1.0
-%define	release	5
+%define	release	6
 %define	Summary	Action-loaded 2D arcade shooter game
 
 Version:	%{version}
@@ -50,7 +50,7 @@ Icon=name
 Terminal=false
 Type=Application
 StartupNotify=true
-Categories=X-MandrivaLinux-MoreApplications-Games-Arcade;Game;ArcadeGame;
+Categories=Game;ArcadeGame;
 EOF
 
 mkdir -p $RPM_BUILD_ROOT%{_gamesdatadir}/%{name}
