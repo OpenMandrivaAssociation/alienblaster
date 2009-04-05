@@ -1,6 +1,6 @@
 %define	name	alienblaster
 %define	version 1.1.0
-%define	release	6
+%define	release	7
 %define	Summary	Action-loaded 2D arcade shooter game
 
 Version:	%{version}
@@ -46,7 +46,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 Name=Alien Blaster
 Comment=%{Summary}
 Exec=%{_gamesbindir}/alienBlaster
-Icon=name
+Icon=%{name}
 Terminal=false
 Type=Application
 StartupNotify=true
@@ -82,4 +82,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_miconsdir}/%{name}.png
 %{_iconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
-
