@@ -1,6 +1,6 @@
 %define	name	alienblaster
 %define	version 1.1.0
-%define	release	8
+%define	release	9
 %define	Summary	Action-loaded 2D arcade shooter game
 
 Version:	%{version}
