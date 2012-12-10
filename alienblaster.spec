@@ -82,3 +82,57 @@ rm -rf $RPM_BUILD_ROOT
 %{_miconsdir}/%{name}.png
 %{_iconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 1.1.0-9mdv2011.0
++ Revision: 616559
+- the mass rebuild of 2010.0 packages
+
+* Thu Sep 10 2009 Thierry Vignaud <tv@mandriva.org> 1.1.0-8mdv2010.0
++ Revision: 436638
+- rebuild
+
+* Sun Apr 05 2009 Funda Wang <fwang@mandriva.org> 1.1.0-7mdv2009.1
++ Revision: 364137
+- fix icon name
+
+* Thu Jun 12 2008 Pixel <pixel@mandriva.com> 1.1.0-6mdv2009.0
++ Revision: 218435
+- rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+* Thu Jan 03 2008 Thierry Vignaud <tv@mandriva.org> 1.1.0-6mdv2008.1
++ Revision: 141886
+- drop X-MandrivaLinux-MoreApplications-Games-Arcade category
+- drop old menu
+
+* Thu Dec 20 2007 Olivier Blin <oblin@mandriva.com> 1.1.0-5mdv2008.1
++ Revision: 135819
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+    - import alienblaster
+
+
+* Mon Sep 04 2006 Nicolas Lécureuil <neoclust@mandriva.org> 1.1.0-5mdv2007.0
+- XDG
+
+* Wed Jun 28 2006  Lenny Cartier <lenny@mandriva.com> 1.1.0-4mdv2007.0
+- rebuild
+
+* Fri Aug 19 2005 Per Ã˜yvind Karlsen <pkarlsen@mandriva.com> 1.1.0-3mdk
+- buildrequires
+- compile with $RPM_OPT_FLAGS
+- add icons
+- %%mkrel
+- drop 'LICENSE' as package is GPL and 'INSTALL' as it just cointains
+  some easy install instructions which really isn't very useful
+  for a binary package..
+- cosmetics
+
+* Tue Aug 31 2004 Michael Scherer <misc@mandrake.org> 1.1.0-2mdk 
+- fix inclusion of datafile
+
+* Fri Aug 20 2004 Lenny Cartier <lenny@mandrakesoft.com> 1.1.0-1mdk
+- new
