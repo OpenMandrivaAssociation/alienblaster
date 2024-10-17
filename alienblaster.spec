@@ -13,7 +13,7 @@ Source0:	http://www.informatik.uni-bremen.de/~schwardt/alienblaster/%{name}-%{ve
 Source11:	%{name}-16x16.png
 Source12:	%{name}-32x32.png
 Source13:	%{name}-48x48.png
-URL:		http://www.schwardtnet.de/alienblaster/
+URL:		https://www.schwardtnet.de/alienblaster/
 BuildRequires:	SDL_mixer-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
